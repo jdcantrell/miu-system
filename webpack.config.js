@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -7,7 +6,6 @@ module.exports = {
     path: './dist',
     filename: 'miu.js'
   },
-  devtool: 'source-map',
   module: {
     loaders: [
       {
