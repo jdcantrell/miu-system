@@ -10,28 +10,28 @@ export function rule2(theorem) {
   return `${theorem}${x}`;
 }
 
-export function rule3(theorem, index) {
+export const rule3 = index => theorem => {
   if (theorem.substr(index, 3) === 'III') {
     var x = theorem.substr(0, index);
     var y = theorem.substr(index + 3);
     return `${x}U${y}`;
   }
   return null;
-}
+};
 
 export function rule3Applies(theorem) {
   return theorem.match(/III/) !== null;
 }
 
-
-export function rule4(theorem, index) {
+export const rule4 = index => theorem => {
   if (theorem.substr(index, 2) === 'UU') {
     var x = theorem.substr(0, index);
     var y = theorem.substr(index + 2);
     return `${x}${y}`;
   }
+
   return null;
-}
+};
 
 export function rule4Applies(theorem) {
   return theorem.match(/UU/) !== null;

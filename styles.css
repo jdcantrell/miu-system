@@ -1,0 +1,63 @@
+body {
+  font-family: "Gentium Book Basic", serif;
+  font-size: 21px;
+  padding: 20px;
+}
+
+p {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.previous, .rules {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.rules div {
+  margin-bottom: 20px;
+}
+
+.previous li {
+  font-family: monospace;
+}
+
+.previous li:hover {
+  cursor: pointer;
+  background-color: #ff8;
+}
+
+
+.theorem {
+  font-family: monospace;
+  font-size: 36px;
+  text-align: center;
+  word-wrap: break-word;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+.rule3 .I + .I + .I {
+  background-color: #cfc;
+}
+.rule3 .I + .I + .I:hover {
+  background-color: #3f3;
+  cursor: pointer;
+}
+
+.rule4 .U + .U  {
+  background-color: #ccf;
+}
+.rule4 .U + .U:hover  {
+  background-color: #88f;
+  cursor: pointer;
+}
+
+button {
+  font-family: "Gentium Book Basic", serif;
+  font-size: 21px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}

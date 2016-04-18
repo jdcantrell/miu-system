@@ -1,4 +1,5 @@
-var path = require('path');
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
   entry: './src/main',
@@ -6,6 +7,7 @@ module.exports = {
     path: './dist',
     filename: 'miu.js'
   },
+  devtool: 'source-map',
   module: {
     loaders: [
       {
@@ -14,7 +16,7 @@ module.exports = {
         query: {
           presets: ['es2015']
         },
-        include: /src/,
+        include: path.join(__dirname, 'src'),
         exclude: /node_modules/
       }
     ]
